@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.game-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #34495e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem; /* Ukuran font besar untuk emoji */
+  color: transparent;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card.open {
+  color: white;
+  background-color: #1abc9c;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsif: Sesuaikan ukuran grid dan kartu untuk perangkat mobile */
+@media (max-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(4, 90px); /* Ukuran lebih kecil di layar tablet dan mobile */
+  }
+
+  .card {
+    font-size: 2rem; /* Ukuran emoji lebih kecil */
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Responsif untuk perangkat mobile lebih kecil */
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: repeat(4, 75px); /* Ukuran grid lebih kecil untuk layar sangat kecil */
+  }
+
+  .card {
+    font-size: 1.5rem; /* Ukuran emoji lebih kecil lagi */
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (max-width: 480px) {
+    .home-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+.home-btn {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 12px 30px;
+  background-color: #077b32;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(7, 123, 50, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  animation: fadeUp 0.6s ease-out 0.5s both;
+}
+
+.home-btn:hover {
+  background-color: transparent;
+  border: 2px solid #077b32;
+  color: #077b32;
+  box-shadow: 0 0 25px #077b32;
+}
