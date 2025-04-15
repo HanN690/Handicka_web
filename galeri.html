@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="galeri.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <title>My Galeri</title>
+</head>
+
+<body>
+    <section>
+        <div class="img-wrapper">
+          <div class="main-container">
+            <div class="image" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="100">
+              <img src="enhanced_1.png" alt="">
+            </div>
+            <div class="image" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+              <img src="enhanced_2.png" alt="">
+            </div>
+            <div class="image" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="100">
+              <img src="enhanced_4.png" alt="">
+            </div>
+            <div class="image" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="300">
+              <img src="enhanced_7.png" alt="">
+            </div>
+          </div> <!-- penutup main-container -->
+        </div> <!-- penutup img-wrapper -->
+      
+        <!-- Modal Fullscreen -->
+        <div id="imgModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="fullImg">
+        </div>
+      
+        <a href="index.html" class="home-btn" title="Kembali" data-aos="zoom-in" data-aos-duration="1500"
+          data-aos-delay="1800"><i class="fas fa-home"></i></a>
+      </section>
+      
+    <script>
+        AOS.init({
+            offset: 100, // seberapa jauh dari viewport
+            duration: 1000, // durasi default
+            easing: 'ease-in-out',
+            once: true, // animasi cuma sekali
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+      <script src="galeri.js"></script>
+</body>
+
+</html>
