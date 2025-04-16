@@ -321,3 +321,37 @@ section{
         font-size: 1rem;
     }
 }
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .hero-section img {
+    width: 150px; /* atau pakai max-width: 80% */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .typing-text {
+    font-size: 1.2rem;
+    word-break: break-word;
+  }
+
+  .social-links i {
+    font-size: 1.5rem;
+    margin: 10px 5px;
+  }
+
+  .menu-toggle {
+    right: 10px;
+    top: 15px;
+  }
+}
