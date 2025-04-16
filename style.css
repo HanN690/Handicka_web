@@ -188,7 +188,9 @@ section{
     font-weight: 700;
     border-radius: 5px;
     transition: 0.2s linear;
-    display: block; /* agar margin auto bisa berfungsi */
+    display: block;
+    position: relative;
+    z-index: 1;/* agar margin auto bisa berfungsi */
 }
 .content button:hover{
     scale: 1.1;
