@@ -21,7 +21,7 @@ function cancel() {
 // Typewriter Effect
 const texts = [
     "DESIGNER",
-    "TRADER",
+    "GAMER",
     "EDITOR",
 ]
 let speed  =100;
